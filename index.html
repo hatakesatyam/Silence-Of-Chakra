@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chakra of Silence</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0d0d0d;
+            color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            padding: 2rem 1rem;
+            background-color: #1c1c1c;
+            border-bottom: 2px solid #333;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            color: #ff4d4d;
+        }
+        section {
+            padding: 2rem;
+            transition: background-color 0.3s ease;
+            border-bottom: 1px solid #333;
+        }
+        section:hover {
+            background-color: #1a1a1a;
+        }
+        .quote-box {
+            font-size: 1.2rem;
+            margin-top: 1rem;
+            font-style: italic;
+            color: #ccc;
+        }
+        button {
+            background-color: #ff4d4d;
+            border: none;
+            padding: 0.5rem 1rem;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Chakra of Silence</h1>
+    </header>
+
+    <section id="kiyo-quotes">
+        <h2>Kiyo Quotes 🔥</h2>
+        <div class="quote-box" id="quoteBox">"He doesn’t need to beat you at your strength — he just removes your strength from the game."</div>
+        <button onclick="shuffleQuote()">Shuffle Quote</button>
+    </section>
+
+    <section id="jonin-training">
+        <h2>Jonin Training 🥷</h2>
+        <p>Train like a shadow—calm mind, deadly impact. Your custom workouts live here.</p>
+    </section>
+
+    <section id="anime-vault">
+        <h2>Anime Vault 📺</h2>
+        <p>Your personal stash of Naruto, One Piece, Bleach, and elite anime strategy vaults.</p>
+    </section>
+
+    <section id="genjutsu-dreams">
+        <h2>Genjutsu Dreams 💭</h2>
+        <p>These are the illusions you turn into reality—your lifetime goals and inner path.</p>
+    </section>
+
+    <section id="shadow-chess">
+        <h2>Shadow Chess ♟️</h2>
+        <p>Daily moves, tactics, and breakdowns—Ayanokoji-style chess training lives here.</p>
+    </section>
+
+    <script>
+        const quotes = [
+            "He doesn’t need to beat you at your strength — he just removes your strength from the game.",
+            "When you stay silent long enough, people start to reveal themselves.",
+            "Be invisible, be efficient, be unforgettable.",
+            "The strongest don’t shout—they calculate.",
+            "Even a shadow can break the light if used right."
+        ];
+        function shuffleQuote() {
+            const box = document.getElementById("quoteBox");
+            const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+            box.innerText = `"${randomQuote}"`;
+        }
+    </script>
+</body>
+</html>
